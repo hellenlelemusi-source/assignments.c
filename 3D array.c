@@ -9,12 +9,12 @@ int main(){
 	int branch,floor,room;
 	int totaloccupied=0;
 	//seed random number generator
-	srand(time(NULL));
+	
 	//assign random accupancy
 	for(branch=0,branch<=3,branch++){
 	for (floor=0,floor<=5,floor++){
 	for (room=0,room<=10,room++){
-		chain[branch][floor][room]=rand()%2;
+		
 		totaloccupied+=chain[branch][floor][room];
 	}
 	}	
@@ -38,3 +38,4 @@ printf("floor%d:\n",floor+1);
 }
 
 	
+
